@@ -1,0 +1,46 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #fceabb, #f8b500);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    max-width: 600px;
+}
+button, .nextBtn {
+    background-color: #ff6b81;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+.hidden {
+    display: none;
+}
+#heartContainer span {
+    position: absolute;
+    color: red;
+    font-size: 2rem;
+    animation: floatHearts 3s linear forwards;
+}
+.emot {
+    font-size: 1.5rem;
+}
+@keyframes floatHearts {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-200px) scale(1.5); opacity: 0; }
+}
